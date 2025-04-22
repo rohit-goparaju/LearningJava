@@ -1,7 +1,7 @@
 package com.learningJava.learningJava;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Hello world!
@@ -9,8 +9,8 @@ import org.apache.logging.log4j.Logger;
 
 
 public class App {
-
-	public static final Logger log = LogManager.getLogger(App.class);
+	
+	final static Logger log = LoggerFactory.getLogger(App.class);
 	
 	public static void main(String[] args) {
 		log.info("Hello World!");
