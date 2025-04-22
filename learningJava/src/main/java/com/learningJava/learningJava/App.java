@@ -1,10 +1,18 @@
 package com.learningJava.learningJava;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Hello world!
  */
+
+
 public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+	public static final Logger log = LogManager.getLogger(App.class);
+	
+	public static void main(String[] args) {
+		log.info("Hello World!");
     }
 }

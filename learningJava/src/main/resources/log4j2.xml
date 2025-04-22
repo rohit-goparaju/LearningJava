@@ -1,0 +1,14 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Configuration status ="WARN">
+	<Appenders>
+		<Console name ="ConsoleAppender" target = "SYSTEM_OUT">
+			<PatternLayout disableAnsi = "false" pattern = "%highlight{[%level]} [%d{DATE}] [ %location ] %nMessage -----------> %msg%n "/>
+		</Console>
+	</Appenders>
+	
+	<Loggers>
+		<Root level = "trace">
+			<AppenderRef ref = "ConsoleAppender"/>
+		</Root>
+	</Loggers>
+</Configuration>
