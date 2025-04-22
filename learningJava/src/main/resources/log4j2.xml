@@ -2,13 +2,25 @@
 <Configuration status ="WARN">
 	<Appenders>
 		<Console name ="ConsoleAppender" target = "SYSTEM_OUT">
-			<PatternLayout disableAnsi = "false" pattern = "%highlight{[%level]} [%d{DATE}] [ %location ] %nMessage -----------> %msg%n "/>
+			<PatternLayout disableAnsi = "false" pattern = "%highlight{[%level]} [%d{DATE}] [ %location ] %nMessage -----------> %msg%n"/>
 		</Console>
+		<RollingFile name="ConsoleRollingFileAppender" fileName = "consoleLogs/consoleLogs.log" filePattern = "consoleLogs/%d{YYYY-MMM-dd}/%d{yyyy-MMM-dd-HH-mm-ss-SS}-consoleLogs.log">
+			<PatternLayout pattern = "[%level] [%d{DATE}] [%location] %nMessage -----------> %msg%n"/>
+			<Policies>
+				<OnStartupTriggeringPolicy/>
+			</Policies>
+			<DefaultRolloverStrategy>
+				<Delete basePath = "consoleLogHistory/">
+					<IfLastModified age = "30D"/>
+				</Delete> 
+			</DefaultRolloverStrategy>
+		</RollingFile>
 	</Appenders>
 	
 	<Loggers>
 		<Root level = "trace">
 			<AppenderRef ref = "ConsoleAppender"/>
+			<AppenderRef ref = "ConsoleRollingFileAppender"/>
 		</Root>
 	</Loggers>
 </Configuration>
