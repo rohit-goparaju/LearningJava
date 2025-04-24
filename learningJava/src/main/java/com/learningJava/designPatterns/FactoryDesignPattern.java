@@ -1,8 +1,5 @@
 package com.learningJava.designPatterns;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class FactoryDesignPattern {
 	public Shape getShape(String shapeType, int attribute) {
 		switch(shapeType) {
@@ -14,13 +11,12 @@ public class FactoryDesignPattern {
 }
 
 abstract class Shape{
-	public static final Logger log = LoggerFactory.getLogger(Shape.class);
 	String name;
 
 	abstract void setName();
 
-	void display() {
-		log.info(name);
+	String getDisplayString() {
+		return name;
 	}
 }
 
@@ -34,8 +30,8 @@ class Circle extends Shape{
 	}
 
 	@Override
-	void display() {
-		log.info(this.name + " with radius " + this.radius);
+	String getDisplayString() {
+		return (this.name + " with radius " + this.radius);
 	}
 	
 	@Override
@@ -53,8 +49,8 @@ class Triangle extends Shape{
 	}
 
 	@Override
-	void display() {
-		log.info(name + " with side length of " + this.side);
+	String getDisplayString() {
+		return(name + " with side " + this.side);
 	}
 	
 	@Override
