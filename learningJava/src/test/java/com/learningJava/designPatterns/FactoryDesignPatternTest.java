@@ -1,5 +1,6 @@
 package com.learningJava.designPatterns;
 
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -18,6 +19,12 @@ public class FactoryDesignPatternTest {
 	public void triangleTest() {
 		Shape myTriangle = shapeFactory.getShape("Triangle",10);
 		assertTrue(myTriangle.getDisplayString().equals("Triangle with side 10"));
+	}
+	
+	@Test
+	public void nullTest() {
+		Shape myShape = shapeFactory.getShape("Pencil", 100);
+		assertNull(myShape);
 	}
 	
 }
