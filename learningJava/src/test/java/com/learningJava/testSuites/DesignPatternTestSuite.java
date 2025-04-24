@@ -4,6 +4,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
 import com.learningJava.designPatterns.AbstractFactoryDesignPatternTest;
+import com.learningJava.designPatterns.BuilderDesignPatternTest;
 import com.learningJava.designPatterns.FactoryDesignPatternTest;
 import com.learningJava.designPatterns.PrototypeDesignPatternTest;
 import com.learningJava.designPatterns.SingletonDesignPatternTest;
@@ -12,7 +13,8 @@ import com.learningJava.designPatterns.SingletonDesignPatternTest;
 @SelectClasses({FactoryDesignPatternTest.class,
 	AbstractFactoryDesignPatternTest.class,
 	SingletonDesignPatternTest.class,
-	PrototypeDesignPatternTest.class})
+	PrototypeDesignPatternTest.class,
+	BuilderDesignPatternTest.class})
 public class DesignPatternTestSuite {
 	
 }
