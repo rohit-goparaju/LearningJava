@@ -3,6 +3,8 @@ package com.learningJava.learningJava;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.r96.util.FolderCleaner;
+
 /**
  * Hello world!
  */
@@ -10,20 +12,11 @@ import org.slf4j.LoggerFactory;
 
 public class App {
 	final static Logger log = LoggerFactory.getLogger(App.class);
-	
+
 
 	public static void main(String[] args) {
 		FolderCleaner.cleanEmptyFolders("consoleLogs", false);
-
-		for(int i = 0; i < 10 ; i++)
-		{
-			log.info("Hello World!");
-			try {
-				Thread.sleep(1);
-			}catch(InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-
+		
+		
 	}
 }
