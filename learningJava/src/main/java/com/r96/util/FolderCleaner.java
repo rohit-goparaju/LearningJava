@@ -1,4 +1,4 @@
-package com.learningJava.learningJava;
+package com.r96.util;
 
 import java.io.File;
 import java.io.IOException;
