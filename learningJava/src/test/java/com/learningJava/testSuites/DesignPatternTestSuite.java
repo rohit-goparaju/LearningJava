@@ -8,6 +8,7 @@ import com.learningJava.designPatterns.AdapterDesignPatternTest;
 import com.learningJava.designPatterns.BridgeDesignPatternTest;
 import com.learningJava.designPatterns.BuilderDesignPatternTest;
 import com.learningJava.designPatterns.CompositeDesignPatternTest;
+import com.learningJava.designPatterns.DecoratorDesignPatternTest;
 import com.learningJava.designPatterns.FactoryDesignPatternTest;
 import com.learningJava.designPatterns.ObjectPoolDesignPatternTest;
 import com.learningJava.designPatterns.PrototypeDesignPatternTest;
@@ -22,7 +23,8 @@ import com.learningJava.designPatterns.SingletonDesignPatternTest;
 	ObjectPoolDesignPatternTest.class,
 	AdapterDesignPatternTest.class,
 	BridgeDesignPatternTest.class,
-	CompositeDesignPatternTest.class})
+	CompositeDesignPatternTest.class,
+	DecoratorDesignPatternTest.class})
 public class DesignPatternTestSuite {
 	
 }
