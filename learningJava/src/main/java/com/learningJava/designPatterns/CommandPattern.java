@@ -3,8 +3,8 @@ package com.learningJava.designPatterns;
 //Client
 public class CommandPattern {
 	
-	Light light = new Light();
-	Command turnOn = new LightOnCommand(light);
+	private Light light = new Light();
+	private Command turnOn = new LightOnCommand(light);
 	Remote remote = new Remote(turnOn);
 }
 
