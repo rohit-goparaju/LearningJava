@@ -5,6 +5,7 @@ public class CommandPattern {
 	
 	Light light = new Light();
 	Command turnOn = new LightOnCommand(light);
+	Remote remote = new Remote(turnOn);
 }
 
 //command interface
@@ -32,5 +33,19 @@ class LightOnCommand implements Command{
 	@Override
 	public boolean execute() {
 		return this.light.turnOn();
+	}
+}
+
+//Invoker
+class Remote{
+	Command lightOnCommand;
+
+	public Remote(Command lightOnCommand) {
+		super();
+		this.lightOnCommand = lightOnCommand;
+	}
+	
+	boolean pressButton() {
+		return lightOnCommand.execute();
 	}
 }

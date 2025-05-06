@@ -9,7 +9,7 @@ public class CommandPatternTest {
 	@Test
 	void test() {
 		CommandPattern test = new CommandPattern();
-		assertTrue(test.turnOn.execute());
+		assertTrue(test.remote.pressButton());
 	}
 
 }
