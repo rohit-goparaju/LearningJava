@@ -14,6 +14,7 @@ import com.learningJava.designPatterns.DecoratorDesignPatternTest;
 import com.learningJava.designPatterns.FacadeDesignPatternTest;
 import com.learningJava.designPatterns.FactoryDesignPatternTest;
 import com.learningJava.designPatterns.FlyweightDesignPatternTest;
+import com.learningJava.designPatterns.InterpreterPatternTest;
 import com.learningJava.designPatterns.ObjectPoolDesignPatternTest;
 import com.learningJava.designPatterns.PrototypeDesignPatternTest;
 import com.learningJava.designPatterns.ProxyDesignPatternTest;
@@ -34,7 +35,8 @@ import com.learningJava.designPatterns.SingletonDesignPatternTest;
 	FlyweightDesignPatternTest.class,
 	ProxyDesignPatternTest.class,
 	ChainOfResponsibilityDesignPatternTest.class,
-	CommandPatternTest.class})
+	CommandPatternTest.class,
+	InterpreterPatternTest.class})
 public class DesignPatternTestSuite {
 	
 }
