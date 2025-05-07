@@ -24,6 +24,7 @@ import com.learningJava.designPatterns.ProxyDesignPatternTest;
 import com.learningJava.designPatterns.SingletonDesignPatternTest;
 import com.learningJava.designPatterns.StatePatternTest;
 import com.learningJava.designPatterns.StrategyPatternTest;
+import com.learningJava.designPatterns.TemplatePatternTest;
 
 @Suite
 @SelectClasses({FactoryDesignPatternTest.class,
@@ -46,7 +47,8 @@ import com.learningJava.designPatterns.StrategyPatternTest;
 	MementoPatternTest.class,
 	ObserverPatternTest.class,
 	StatePatternTest.class,
-	StrategyPatternTest.class})
+	StrategyPatternTest.class,
+	TemplatePatternTest.class})
 public class DesignPatternTestSuite {
 	
 }
