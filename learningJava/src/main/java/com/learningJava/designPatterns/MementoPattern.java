@@ -4,11 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MementoPattern {
-
+	Originator origin = new Originator("State 1");
+	Caretaker careTaker = new Caretaker();
 }
 
 class Originator{
 	String state;
+
+	public Originator(String state) {
+		super();
+		this.state = state;
+	}
 
 	public String getState() {
 		return state;

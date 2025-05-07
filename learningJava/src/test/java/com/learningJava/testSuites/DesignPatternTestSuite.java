@@ -16,6 +16,7 @@ import com.learningJava.designPatterns.FactoryDesignPatternTest;
 import com.learningJava.designPatterns.FlyweightDesignPatternTest;
 import com.learningJava.designPatterns.InterpreterPatternTest;
 import com.learningJava.designPatterns.MediatorPattern;
+import com.learningJava.designPatterns.MementoPatternTest;
 import com.learningJava.designPatterns.ObjectPoolDesignPatternTest;
 import com.learningJava.designPatterns.PrototypeDesignPatternTest;
 import com.learningJava.designPatterns.ProxyDesignPatternTest;
@@ -38,7 +39,8 @@ import com.learningJava.designPatterns.SingletonDesignPatternTest;
 	ChainOfResponsibilityDesignPatternTest.class,
 	CommandPatternTest.class,
 	InterpreterPatternTest.class,
-	MediatorPattern.class})
+	MediatorPattern.class,
+	MementoPatternTest.class})
 public class DesignPatternTestSuite {
 	
 }
