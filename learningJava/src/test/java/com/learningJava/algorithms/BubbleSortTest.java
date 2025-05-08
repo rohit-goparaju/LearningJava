@@ -5,13 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+import com.r96.util.R96Random;
 import com.r96.util.SortUtil;
 
 public class BubbleSortTest {
 	@Test
 	void test() {
-		int[] arr = {3,2,5,1,4};
-		
+		int[] arr = R96Random.getRandomIntArr(10);
+
 		assertFalse(SortUtil.isSorted(arr));
 		BubbleSort.sort(arr);
 		assertTrue(SortUtil.isSorted(arr));
