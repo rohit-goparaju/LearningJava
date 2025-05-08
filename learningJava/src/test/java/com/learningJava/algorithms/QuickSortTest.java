@@ -14,7 +14,7 @@ public class QuickSortTest {
 	void test() {
 		int[] arr = R96Random.getRandomIntArr(10);
 		assertFalse(SortUtil.isSorted(arr));
-		QuickSort.sort(arr, 0, arr.length-1);
+		QuickSort.sort(arr);
 		assertTrue(SortUtil.isSorted(arr));
 	}
 }
