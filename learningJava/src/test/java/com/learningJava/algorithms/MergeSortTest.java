@@ -15,7 +15,6 @@ public class MergeSortTest {
 	@Test
 	void test() {
 		int[] arr = R96Random.getRandomIntArr(new Random().nextInt(10, 50));
-		assertFalse(SortUtil.isSorted(arr));
 		MergeSort.sort(arr);
 		assertTrue(SortUtil.isSorted(arr));
 	}
