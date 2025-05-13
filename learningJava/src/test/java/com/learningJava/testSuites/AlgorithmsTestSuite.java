@@ -3,6 +3,7 @@ package com.learningJava.testSuites;
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
+import com.learningJava.algorithms.BinarySearchTest;
 import com.learningJava.algorithms.BubbleSortTest;
 import com.learningJava.algorithms.InsertionSortTest;
 import com.learningJava.algorithms.LinearSearchTest;
@@ -17,7 +18,8 @@ import com.learningJava.algorithms.SelectionSortTest;
 	MergeSortTest.class,
 	SelectionSortTest.class,
 	InsertionSortTest.class,
-	LinearSearchTest.class
+	LinearSearchTest.class,
+	BinarySearchTest.class
 })
 public class AlgorithmsTestSuite {
 
