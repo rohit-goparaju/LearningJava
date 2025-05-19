@@ -6,6 +6,7 @@ import org.junit.platform.suite.api.Suite;
 import com.learningJava.algorithms.BinarySearchTest;
 import com.learningJava.algorithms.BubbleSortTest;
 import com.learningJava.algorithms.InsertionSortTest;
+import com.learningJava.algorithms.KMPTest;
 import com.learningJava.algorithms.LinearSearchTest;
 import com.learningJava.algorithms.MergeSortTest;
 import com.learningJava.algorithms.QuickSortTest;
@@ -19,7 +20,8 @@ import com.learningJava.algorithms.SelectionSortTest;
 	SelectionSortTest.class,
 	InsertionSortTest.class,
 	LinearSearchTest.class,
-	BinarySearchTest.class
+	BinarySearchTest.class,
+	KMPTest.class
 })
 public class AlgorithmsTestSuite {
 
